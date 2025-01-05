@@ -1,0 +1,60 @@
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+    z-index:1;  
+}
+
+.row{
+    text-align:center;
+}
+
+td{
+    z-index:1;
+}
+
+.table{
+    position:absolute;
+    top:50%;
+    transform: translate(-50%, -50%);
+    display:table;
+    margin: 0 auto;
+    z-index:2;
+}
+
+.calcButtons{
+    width: 5em; 
+    height: 5em; 
+    font-size: 1.5em; 
+    text-align: center; 
+    vertical-align: middle;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    z-index:2;
+}
+
+.calcButtons:active {
+    background-color: #ccc; 
+}
+.enter{
+    width:240px;
+}
+
+.clear{
+    height:80px;
+}
+
+.answers{
+    height:2em;
+    width:15em;
+    position:absolute;
+    top:10%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size:25px;
+    z-index:1;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="calc.css">
+  </head>
+  <body>
+    <main>
+        <!-- <h1>Calculator</h1>   -->
+
+        <input type="text" id="userInput" class="answers">
+
+        <table class="table">
+          <tr class="row">
+            <td></td>
+          </tr>
+          <tr class="row">
+            <td><button class="calcButtons" onclick="addToText(1)">1</button></td>
+            <td><button class="calcButtons" onclick="addToText(2)">2</button></td>
+            <td><button class="calcButtons" onclick="addToText(3)">3</button></td>
+            <td><button class="calcButtons" onclick="addToText('+')">+</button></td>
+          </tr>
+          <tr class="row">
+            <td><button class="calcButtons" onclick="addToText(4)">4</button></td>
+            <td><button class="calcButtons" onclick="addToText(5)">5</button></td>
+            <td><button class="calcButtons" onclick="addToText(6)">6</button></td>
+            <td><button class="calcButtons" onclick="addToText('-')">-</button></td>
+          </tr>
+          <tr class="row">
+            <td><button class="calcButtons" onclick="addToText(7)">7</button></td>
+            <td><button class="calcButtons" onclick="addToText(8)">8</button></td>
+            <td><button class="calcButtons" onclick="addToText(9)">9</button></td>
+            <td><button class="calcButtons" onclick="addToText('*')">*</button></td>
+          </tr>
+          <tr class="row">
+            <td><button class="calcButtons" onclick="addToText(0)">0</button></td>
+            <td><button class="calcButtons" onclick="addToText('/')">/</button></td>
+            <td><button class="calcButtons" onclick="calculate()">Enter</button></td>
+            <td><button class="calcButtons" onclick="clearInput()">Clear</button></td>
+          </tr>
+        </table>
+    </main>
+    <script src="calc.js"></script>
+  </body>
+</html>
