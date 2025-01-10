@@ -13,7 +13,7 @@ function calculate(){
   console.log(textBox.value);
 
   var boxLength = textBox.value.length;
-  var sign = findOperatorIndex()
+  var sign = findSign()
 
   var num1 = textBox.value.substring(0, textBox.value.indexOf(sign));
   var num2 = textBox.value.substring(textBox.value.indexOf(sign) + 1, boxLength + 1);
@@ -45,7 +45,7 @@ function calculate(){
   }
 }
 
-function findOperatorIndex(){
+function findSign(){
   if (textBox.value.indexOf('+') != -1){
     return '+';
   }
